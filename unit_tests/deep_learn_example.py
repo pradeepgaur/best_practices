@@ -12,7 +12,7 @@ def make_convnet(input_image):
     return net
 
 def test_convnet():
-  image = tf.placeholder(tf.float32, (None, 100, 100, 3)
+  image = tf.placeholder(tf.float32, (None, 100, 100, 3))
   model = Model(image)
   sess = tf.Session()
   sess.run(tf.global_variables_initializer())
