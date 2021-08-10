@@ -1,5 +1,4 @@
 import tensorflow.compat.v1 as tf
-import tf_slim as slim
 tf.disable_v2_behavior()
 
 def make_convnet(input_image):
@@ -13,7 +12,7 @@ def make_convnet(input_image):
     net = slim.max_pool2d(net, [2, 2], scope='pool3')
     net = slim.conv2d(input_image, 32, [1, 1], scope="conv6_1x1")
     return net
-    
+
 def test_convnet():
   image = tf.placeholder(tf.float32, (None, 100, 100, 3))
   model = Model(image)
