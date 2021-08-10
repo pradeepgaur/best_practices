@@ -1,3 +1,4 @@
+import tensorflow as tf
 
 def make_convnet(input_image):
     net = slim.conv2d(input_image, 32, [11, 11], scope="conv1_11x11")
