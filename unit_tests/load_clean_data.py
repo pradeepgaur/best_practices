@@ -21,9 +21,6 @@ def test_data_shape_load_clean_data_california():
     # testing for any missing or additional columns
     assert df.shape[1] == 9
 
-    # checking if label present 
-    assert 'median_house_value' in df.columns
-    
 
 
 
